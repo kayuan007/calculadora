@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #f4f4f4;
     margin: 0;
     display: flex;
     align-items: center;
@@ -14,17 +14,21 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: auto;
 }
 
 .display {
     font-size: 24px;
-    width: 100%;
+    width: calc(100% - 20px);
     margin-bottom: 10px;
     padding: 10px;
     text-align: right;
     border: 1px solid #ccc;
     border-radius: 3px;
     outline: none;
+    overflow-y: scroll; /* Adiciona uma barra de rolagem caso haja muitos números */
+    height: 60px; /* Altura fixa para a caixa de texto */
 }
 
 .tecla {
